@@ -34,7 +34,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore NuGet package
-        run: nuget restore xCrossApi.sln # for c# api file Name add
+        run: nuget restore xCrossApi.sln
         
       - name: Build the Solution
-        run: msbuild restore xCrossApi.sln # for c# api file Name add
+        run: msbuild restore xCrossApi.sln 
