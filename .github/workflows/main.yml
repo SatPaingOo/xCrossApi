@@ -39,7 +39,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore NuGet package
-        run: nuget restore testAPI.sln 
+        run: nuget restore xCrossApi\xCrossApi.csproj 
         
       - name: Build the Solution
         run: msbuild xCrossApi\xCrossApi.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
